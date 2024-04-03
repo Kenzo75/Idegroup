@@ -1,0 +1,96 @@
+.task {
+    background-color: #F4F4F2;
+    width: 100%;
+    height: 81vh;
+    border-radius: 10px;
+    float: right;
+    display: grid;
+    justify-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.judul-task {
+    width: 100%;
+    margin: 30px;
+}
+.task-content {
+    width: 100%;
+}
+.container-task {
+    margin: 10px;
+}
+.task-table {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+td {
+    padding: 10px;
+}
+h1 {
+    margin: 20px;
+}
+.head {
+    border-top: 2px solid black; /* Border bagian atas */
+    border-bottom: 2px solid black; /* Border bagian bawah */
+}
+.foto {
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.btn-on-1 {
+    background-color: #FF2323;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+}
+.btn-off-1 {
+    background-color: transparent;
+    border: 2px solid #FF2323;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+}
+.btn-on-2 {
+    background-color: #1091EF;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+}
+.btn-off-2 {
+    background-color: transparent;
+    border: 2px solid #007DFA;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+}
+.btn-on-3 {
+    background-color: #55FA3A;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+}
+.btn-off-3 {
+    background-color: transparent;
+    border: 2px solid #55FA3A;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+}
+.fa-clock {
+    margin: 0;
+    margin-right: 10px;
+}
+.tambah {
+    width: min-content;
+    height: min-content;
+    padding: 10px;
+    float: right;
+    margin: 30px;
+}

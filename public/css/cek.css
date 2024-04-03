@@ -1,0 +1,150 @@
+/* css untuk halaman cek tugas */
+.detail {
+    width: 100%;
+    height: 85vh;
+    float: right;;
+    justify-items: center;
+    background-color: #F4F4F2;
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.detail-container {
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+}
+.tabel {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.kolom-2 {
+    padding-left: 30px;
+}
+.detail-container-1 {
+    width: 80%;
+    height: 100%;
+}
+.detail-content-1 {
+    width: 100%;
+    height: 64px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.detail-content-2 {
+    padding: 10px;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.label {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+}
+.isi-content {
+    padding: 10px;
+}
+input {
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    background-color: #FFFFFF;
+}
+.detail-tugas {
+    text-align: left;
+}
+select {
+    width: 99%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 50px;
+    padding: 5px;
+    border: 2px solid #BBBFCA;
+    border-radius: 10px;
+}
+textarea {
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 130px;
+    padding: 5px;
+    border: none;
+    background-color: #FFFFFF;
+}
+form {
+    width: 100%;
+}
+.submit {
+    width: 95%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    height: 50px;
+    padding: 5px;
+    color: white;
+    background-color:  #000000;
+    border-radius: 5px;
+    font-family: Poppins, sans-serif;
+}
+.submit:hover {
+    background-color: #BBBFCA;
+    color: black;
+    border: none;
+}
+.back {
+    float: left;
+    color: #495464;
+    text-decoration: none;
+    text-align: center;
+}
+td {
+    padding: 10px;
+    padding-left: 0;
+}
+a {
+    text-decoration: none;
+}
+.ubah {
+    background-color: #55FA3A;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    box-shadow: -5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.selesai {
+    background-color: #007DFA;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    box-shadow: -5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.btn-aksi {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.hapus {
+    background-color: #FD0808;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    box-shadow: -5px 5px 1px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,90 @@
+.profil {
+    width: 100%;
+    height: 100%;
+    background-color: #F4F4F2;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    overflow-y: auto;
+}
+.profil-container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.profil-content {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+.head {
+    width: 100%;
+    height: 16%;
+    display: flex;
+    flex-direction: row;
+}
+.foto {
+    border-radius: 100%;
+}
+.nama-text {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.bidang-1 {
+    color: black;
+    text-align: center;
+    border-radius: 7px;
+    background-color: #BC18F5;
+}
+.bidang-2 {
+    color: black;
+    text-align: center;
+    background-color: #FCE306;
+    border-radius: 7px;
+}
+.bidang-1 {
+    color: black;
+    text-align: center;
+    border-radius: 7px;
+    background-color: #FC5F068F;
+}
+.admin {
+    color: black;
+    text-align: center;
+    border-radius: 7px;
+    background-color: #55FA3A8F;
+}
+.sosmed {
+    height: 35%;
+    display: grid;
+    align-content: center;
+}
+.body {
+    width: 100%;
+    height: 80%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.kata-mutiara {
+    width: 50%;
+    display: flex;
+    margin-top: 20px;
+}
+.mutiara {
+    width: 250px;
+}
+.isi-body {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.edit-profil {
+    color: white;
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+    background: linear-gradient(to right, #000000, #0620A7); /* Gradien merah ke biru */
+    height: 35px;
+    align-content: center;
+
+}

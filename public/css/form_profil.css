@@ -1,0 +1,143 @@
+.profil {
+    width: 100%;
+    height: 85vh;
+    float: right;
+    display: grid;
+    justify-items: center;
+    background-color: #F4F4F2;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+.username {
+    width: 100%;
+    height: 25vh;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin-bottom: 60px;
+}
+.biru {
+    width: 100%;
+    height: 25vh;
+    background-color: #007DFA;
+    border-radius: 10px;
+    display: grid;
+    justify-items: center;
+}
+.name {
+    margin: 0;
+    margin-top: 20px;
+}
+.custom-file-upload {
+    border-radius: 50%;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Atur posisi relatif */
+    display: inline-block; /* Buat tampilan inline */
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #BBBFCA; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    font-size: 16px;
+    border: none;
+    width: 100px;
+    height: 100px;
+    display: grid;
+}
+.custom-file-upload:hover {
+    background-color: grey; /* Warna latar belakang saat dihover */
+}
+#file-upload {
+    display: none; /* Sembunyikan input file asli */
+}
+.image-preview {
+    position: absolute; /* Atur posisi absolut */
+    top: 0;
+    left: 0;
+    width: 100%; /* Lebar 100% agar gambar mengisi persegi */
+    height: 100%; /* Tinggi 100% agar gambar mengisi persegi */
+    object-fit: cover; /* Menjaga aspek rasio gambar dan mengisi persegi */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+}
+.foto {
+    width: 100%;
+    justify-items: center;
+    place-items: center;
+}
+.form {
+    width: 100%;
+    height: 70%;
+}
+.form-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+
+}
+.form-content-1 {
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.form-content-2 {
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.isi-content {
+    padding: 10px;
+}
+.input-box {
+    width: 100%;
+}
+input {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 5px;
+    border: 2px solid #BBBFCA;
+    border-radius: 5px;
+}
+select {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 5px;
+    border: 2px solid #BBBFCA;
+    border-radius: 5px;
+}
+textarea {
+    width: 100%;
+    margin-top: 10px;
+    height: 40px;
+    padding: 5px;
+    border: 2px solid #BBBFCA;
+    border-radius: 5px;
+}
+select:focus, input:focus, textarea:focus {
+    border: none !important;
+    outline: none !important;
+}
+form {
+    width: 100%;
+}
+.submit {
+    width: 100%;
+    margin-top: 18px;
+    height: 40px;
+    padding: 5px;
+    color: white;
+    background-color:  #007DFA;
+    border-radius: 5px;
+}
+.submit:hover {
+    background-color: #BBBFCA;
+    color: black;
+    border: none;
+}
