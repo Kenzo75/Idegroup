@@ -7,7 +7,7 @@
         <div class="task-list">
             <div class="task-content">
                 <div class="task-container">
-                    <h1 class="judul-task">Task list anak magang</h1>
+                    <h1 class="judul-task">Task list saya</h1>
                     <table class="task-table" width="100%">
                         <tr class="head">
                             <td class="head">Tugas</td>
@@ -79,8 +79,7 @@
                 </div>
             </div>
         </div>
-
-        <div class="tambah">
+               <div class="tambah">
             <div class="tambah-content">
                 <div class="container-tambah">
                     <h3 class="t">Yang mulia tolong berikan tugas</h3>
@@ -89,5 +88,5 @@
             </div>
         </div>
     </div>
-@endsection
+    @endsection
 

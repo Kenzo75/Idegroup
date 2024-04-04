@@ -7,7 +7,7 @@
         <div class="task-list">
             <div class="task-content">
                 <div class="task-container">
-                    <h1 class="judul-task">Task list anak magang</h1>
+                    <h1 class="judul-task">Task list saya</h1>
                     <table class="task-table" width="100%">
                         <tr class="head">
                             <td class="head">Tugas</td>
@@ -32,7 +32,6 @@
                                 @if ($tugasItem->status == 'Udahdah')
                                 <div class="btn-on-3"><i class="fa-solid fa-clock"></i>Sudah selesai</div>
                                 @endif
-
                             </td>
                             <td>{{ \Carbon\Carbon::parse($tugasItem->mulai)->format('d-m-Y') }}</td>
                             <td>{{ \Carbon\Carbon::parse($tugasItem->selesai)->format('d-m-Y') }}</td>

@@ -2,16 +2,16 @@
 .detail {
     width: 100%;
     height: 85vh;
-    float: right;;
+    float: right;
     justify-items: center;
-    background-color: #F4F4F2;
+    background-color: #f4f4f2;
     border-radius: 10px;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 .detail-container {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     justify-items: center;
 }
 .tabel {
@@ -53,7 +53,7 @@ input {
     height: 30px;
     padding: 5px;
     border: none;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 .detail-tugas {
     text-align: left;
@@ -64,7 +64,7 @@ select {
     margin-bottom: 20px;
     height: 50px;
     padding: 5px;
-    border: 2px solid #BBBFCA;
+    border: 2px solid #bbbfca;
     border-radius: 10px;
 }
 textarea {
@@ -74,7 +74,7 @@ textarea {
     height: 130px;
     padding: 5px;
     border: none;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 form {
     width: 100%;
@@ -86,12 +86,12 @@ form {
     height: 50px;
     padding: 5px;
     color: white;
-    background-color:  #000000;
+    background-color: #000000;
     border-radius: 5px;
     font-family: Poppins, sans-serif;
 }
 .submit:hover {
-    background-color: #BBBFCA;
+    background-color: #bbbfca;
     color: black;
     border: none;
 }
@@ -109,7 +109,7 @@ a {
     text-decoration: none;
 }
 .ubah {
-    background-color: #55FA3A;
+    background-color: #55fa3a;
     width: 20%;
     padding: 10px;
     text-align: center;
@@ -118,7 +118,7 @@ a {
     box-shadow: -5px 5px 1px rgba(0, 0, 0, 0.2);
 }
 .selesai {
-    background-color: #007DFA;
+    background-color: #007dfa;
     width: 20%;
     padding: 10px;
     text-align: center;
@@ -140,7 +140,7 @@ a {
     margin-bottom: 20px;
 }
 .hapus {
-    background-color: #FD0808;
+    background-color: #fd0808;
     width: 20%;
     padding: 10px;
     text-align: center;

@@ -83,7 +83,10 @@
                 <div class="navi">
                     <div class="navi-content">
                         <div class="container-navi">
-                            <i class="fa-regular fa-calendar"></i>{{ now()->format('l, j F Y') }}
+                            <div class="left">
+                                <button class="btn-toggle-sidebar"><i class="fas fa-bars"></i></button>
+                                <div class="date"><i class="fa-regular fa-calendar"></i>{{ now()->format('l, j F Y') }}</div>
+                            </div>
                             <div class="dropdown">@guest
                                 @if (Route::has('login'))
                                     <a class="" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -114,5 +117,15 @@
         </div>
 
     <script src="https://kit.fontawesome.com/14a5aff050.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleBtn = document.querySelector('.btn-toggle-sidebar');
+            const sidebar = document.querySelector('.side');
+
+            toggleBtn.addEventListener('click', function() {
+                sidebar.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 /* css task list */
 .task-list {
-    background-color: #F4F4F2;
+    background-color: #f4f4f2;
     width: 100%;
     height: 50vh;
     border-radius: 10px;
@@ -8,7 +8,7 @@
     display: grid;
     place-items: center;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 .task-content {
     width: 100%;
@@ -45,45 +45,41 @@ a {
 }
 /* css tombol status */
 .btn-on-1 {
-    background-color: #FF2323;
+    background-color: #ff2323;
     color: black;
     padding: 5px;
     border-radius: 20px;
     text-decoration: none;
     text-align: center;
-
 }
 .btn-off-1 {
     background-color: transparent;
-    border: 2px solid #FF2323;
+    border: 2px solid #ff2323;
     color: black;
     padding: 5px;
     border-radius: 20px;
     text-decoration: none;
     text-align: center;
-
 }
 .btn-on-2 {
-    background-color: #1091EF;
+    background-color: #1091ef;
     color: black;
     padding: 5px;
     border-radius: 20px;
     text-decoration: none;
     text-align: center;
-
 }
 .btn-off-2 {
     background-color: transparent;
-    border: 2px solid #007DFA;
+    border: 2px solid #007dfa;
     color: black;
     padding: 5px;
     border-radius: 20px;
     text-decoration: none;
     text-align: center;
-
 }
 .btn-on-3 {
-    background-color: #55FA3A;
+    background-color: #55fa3a;
     color: black;
     padding: 5px;
     border-radius: 20px;
@@ -92,7 +88,7 @@ a {
 }
 .btn-off-3 {
     background-color: transparent;
-    border: 2px solid #55FA3A;
+    border: 2px solid #55fa3a;
     color: black;
     padding: 5px;
     border-radius: 20px;
@@ -110,8 +106,8 @@ a {
 }
 /* css leaderboard */
 .leaderboard {
-    background-color: #F4F4F2;
-    width: 49.5%;
+    background-color: #f4f4f2;
+    width: 100%;
     height: 30vh;
     border-radius: 10px;
     float: right;
@@ -120,7 +116,7 @@ a {
     margin-top: 10px;
     float: left;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 .lead-content {
     width: 100%;
@@ -145,8 +141,8 @@ a {
 
 /* css jadwal */
 .jadwal {
-    background-color: #F4F4F2;
-    width: 49.5%;
+    background-color: #f4f4f2;
+    width: 100%;
     height: 30vh;
     border-radius: 10px;
     float: right;
@@ -170,9 +166,9 @@ a {
 
 /* css tambah tugas */
 .tambah {
-    background-color: #F4F4F2;
-    width: 49.5%;
-    height: 30vh;
+    background-color: #f4f4f2;
+    width: 100%;
+    height: 45vh;
     border-radius: 10px;
     float: right;
     display: grid;
@@ -194,6 +190,7 @@ a {
 .t {
     margin: 0px;
     margin-bottom: 30px;
+    text-align: center;
 }
 .fa-clock {
     margin-right: 10px;
@@ -208,4 +205,56 @@ a[href="tambah"] {
 .foto {
     border-radius: 100%;
     margin-right: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .task-list {
+        display: flex;
+        overflow-x: hidden;
+    }
+    .task-container {
+        display: none;
+    }
+    .task-content {
+        display: none; /* Sembunyikan sidebar di awal untuk layar kecil */
+    }
+    .btn-toggle-sidebar {
+        display: block; /* Tampilkan tombol toggle sidebar */
+        z-index: 999;
+    }
+    .dashboard {
+        width: 100%; /* Sidebar tidak memakan ruang di layar kecil */
+    }
+    .side.active {
+        display: block;
+        z-index: 999;
+        width: 30%;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 767px) {
+    /* Ubah ukuran sesuai kebutuhan */
+    .garis {
+        display: flex;
+        overflow-x: auto;
+    }
+    .date {
+        display: none;
+    }
+    .side {
+        display: none; /* Sembunyikan sidebar di awal untuk layar kecil */
+    }
+    .btn-toggle-sidebar {
+        display: block; /* Tampilkan tombol toggle sidebar */
+        z-index: 999;
+    }
+    .dashboard {
+        width: 100%; /* Sidebar tidak memakan ruang di layar kecil */
+    }
+    .side.active {
+        display: block;
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+        margin-right: 10px;
+    }
 }

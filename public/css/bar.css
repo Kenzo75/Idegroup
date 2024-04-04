@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
     font-family: Poppins, sans-serif;
 }
 .logout {
@@ -8,7 +8,7 @@
 }
 body {
     margin: 7px;
-    background-color: #D9D9D9 !important;
+    background-color: #d9d9d9 !important;
     font-family: Poppins, sans-serif;
     overflow: hidden;
     overflow-x: hidden;
@@ -20,15 +20,15 @@ body {
 }
 .pen {
     text-decoration: none;
-    color: #007DFA;
+    color: #007dfa;
 }
 .trash {
     text-decoration: none;
-    color: #FD0808;
+    color: #fd0808;
 }
 .send {
     text-decoration: none;
-    color: #55FA3A;
+    color: #55fa3a;
 }
 
 /* css side bar */
@@ -37,7 +37,7 @@ body {
     height: 100vh;
     float: left;
     overflow-y: hidden;
-    background-color: #F4F4F2;
+    background-color: #f4f4f2;
     border-radius: 10px;
 }
 .side-bar {
@@ -80,24 +80,25 @@ a {
     align-items: center;
     margin-right: 10px;
 }
-.btn-side-bar, .btn-side-bar-on {
+.btn-side-bar,
+.btn-side-bar-on {
     font-family: Poppins, sans-serif;
     width: 80%;
     padding: 10px;
     text-align: left;
     border-radius: 10px;
     border: none;
-    background-color: #F4F4F2;
+    background-color: #f4f4f2;
     text-decoration: none;
     color: black;
     justify-content: flex-start;
     display: flex;
 }
 .btn-side-bar-on {
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
 }
 .btn-side-bar:hover {
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
 }
 .profil-bar {
     width: 100%;
@@ -108,7 +109,9 @@ a {
 .foto-bar {
     border-radius: 100%;
 }
-.foto-1, .user-name, .role {
+.foto-1,
+.user-name,
+.role {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -116,7 +119,7 @@ a {
     justify-content: space-around;
 }
 .namauser {
-    margin: 0 ;
+    margin: 0;
 }
 h3 {
     margin: 0 !important;
@@ -203,7 +206,7 @@ h3 {
 
 /* css navbar */
 .navi {
-    background-color: #F4F4F2;
+    background-color: #f4f4f2;
     width: 100%;
     height: 15vh;
     border-radius: 10px;
@@ -214,14 +217,29 @@ h3 {
 }
 .navi-content {
     width: 100%;
+    height: 100%;
+}
+.left {
+    display: flex;
+}
+.date {
+    width: max-content;
 }
 .dropdown {
     float: right;
 }
 .container-navi {
     padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
 }
-.fa-calendar, .fa-arrow-right-from-bracket {
+.fa-calendar,
+.fa-arrow-right-from-bracket {
     margin: 20px;
 }
 
@@ -232,7 +250,7 @@ h3 {
     margin: 10px;
 }
 .btn-on-1 {
-    background-color: #FF2323;
+    background-color: #ff2323;
     color: black;
     padding: 5px;
     border-radius: 20px;
@@ -240,14 +258,14 @@ h3 {
 }
 .btn-off-1 {
     background-color: transparent;
-    border: 2px solid #FF2323;
+    border: 2px solid #ff2323;
     color: black;
     padding: 5px;
     border-radius: 20px;
     text-align: center;
 }
 .btn-on-2 {
-    background-color: #1091EF;
+    background-color: #1091ef;
     color: black;
     padding: 5px;
     border-radius: 20px;
@@ -255,14 +273,14 @@ h3 {
 }
 .btn-off-2 {
     background-color: transparent;
-    border: 2px solid #007DFA;
+    border: 2px solid #007dfa;
     color: black;
     padding: 5px;
     border-radius: 20px;
     text-align: center;
 }
 .btn-on-3 {
-    background-color: #55FA3A;
+    background-color: #55fa3a;
     color: black;
     padding: 5px;
     border-radius: 20px;
@@ -270,10 +288,85 @@ h3 {
 }
 .btn-off-3 {
     background-color: transparent;
-    border: 2px solid #55FA3A;
+    border: 2px solid #55fa3a;
     color: black;
     padding: 5px;
     border-radius: 20px;
     text-align: center;
 }
+.btn-toggle-sidebar {
+    display: none; /* Sembunyikan tombol di awal */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.btn-toggle-sidebar {
+    display: none; /* Sembunyikan tombol di awal */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.side.active {
+    display: block;
+    z-index: 999;
+    width: 50%;
+    margin-right: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .garis {
+        display: flex;
+        overflow-x: hidden;
+    }
+    .date {
+        display: none;
+    }
+    .side {
+        display: none; /* Sembunyikan sidebar di awal untuk layar kecil */
+    }
+    .btn-toggle-sidebar {
+        display: block; /* Tampilkan tombol toggle sidebar */
+        z-index: 999;
+    }
+    .dashboard {
+        width: 100%; /* Sidebar tidak memakan ruang di layar kecil */
+    }
+    .side.active {
+        display: block;
+        z-index: 999;
+        width: 30%;
+        margin-right: 10px;
+    }
+}
 
+/* Gunakan media queries untuk mengatur perilaku di layar berbeda */
+@media (max-width: 767px) {
+    /* Ubah ukuran sesuai kebutuhan */
+    .garis {
+        display: flex;
+        overflow-x: hidden;
+    }
+    .date {
+        display: none;
+    }
+    .side {
+        display: none; /* Sembunyikan sidebar di awal untuk layar kecil */
+    }
+    .btn-toggle-sidebar {
+        display: block; /* Tampilkan tombol toggle sidebar */
+        z-index: 999;
+    }
+    .dashboard {
+        width: 100%; /* Sidebar tidak memakan ruang di layar kecil */
+    }
+    .side.active {
+        display: block;
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+        margin-right: 10px;
+    }
+}
+
+/* CSS untuk menampilkan sidebar ketika tombol toggle ditekan */

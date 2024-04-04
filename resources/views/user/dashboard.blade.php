@@ -1,4 +1,4 @@
-@extends('layouts.bar')
+    @extends('layouts.bar')
 
 @section('title') Dashboard @endsection
 @section('style') <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}"> @endsection
@@ -14,7 +14,7 @@
                             <td class="head">Status</td>
                             <td class="head">Tanggal<br> Mulai</td>
                             <td class="head">Tanggal<br> Berakhir</td>
-                            <td class="head">Aksi</td>
+                            <td class="head"></td>
                         </tr>
                         <tr>
                             @foreach($tugasItems as $tugasItem)
