@@ -1,4 +1,75 @@
-@extends('layouts.app')
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="shortcut icon" href="{{ asset('img/logo,jempol,group.png') }}" type="image/x-icon">
+    <title>Idegroup Login</title>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.bunny.net">
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-web">
+        <div class="background">
+            <img src="{{ asset('img/bg2.jpeg') }}" alt="" class="bg-1">
+        </div>
+        <div class="form-content">
+            <div class="form-logo">
+                <img src="{{ asset('img/jempol.grup.png') }}" alt="" class="logo" id="large-logo">
+                <img src="{{ asset('img/jempol.putih.png') }}" alt="" class="logo" id="small-logo">
+            </div>
+            <div class="form-container">
+                <div class="isi-form">
+                    <b><h2>Login</h2></b>
+                    <form method="POST" action="{{ route('login') }}">
+                        @csrf
+                        <label for="email">Email</label>
+                        <div class="input-box">
+                            <input id="email" type="email" class="form-req @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                        </div>
+                        <label for="password">Password</label>
+                        <div class="input-box">
+                            <input id="password" type="password" class="form-req @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                        </div>
+                        <div class="submit-box">
+                            <button type="submit" class="btn-confirm">
+                                {{ __('login') }}
+                            </button>
+                        </div>
+                        <div class="rute-box">
+                            <div class="text">Belum punya akun?</div>
+                            <div class="rute"><a href="{{ route('register') }}" class="log-in">Register</a></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{{-- @extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -70,4 +141,4 @@
         </div>
     </div>
 </div>
-@endsection
+@endsection --}}

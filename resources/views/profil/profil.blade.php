@@ -24,7 +24,7 @@
                         @if (auth()->user()->role === 'admin')
                             <p class="admin">Anda Mentor</p>
                         @else
-                        <p class="@if ($user->team == 'Administrasi') bidang-1 @elseif ($user->team == 'Programmer') bidang-2 @else bidang-3 @endif">{{ $user->team }}</p>
+                        <p class="@if ($user->team == 'Administrator') bidang-1 @elseif ($user->team == 'Programmer') bidang-2 @else bidang-3 @endif">{{ $user->team }}</p>
                         @endif
                         </b>
                     </div>
