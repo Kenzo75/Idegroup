@@ -7,7 +7,7 @@
         <div class="task-list">
             <div class="task-content">
                 <div class="task-container">
-                    <h1 class="judul-task">List-list tugas anak magang</h1>
+                    <h1 class="judul-task">Daftar Tugas Anak Magang</h1>
                     <table class="task-table" width="100%">
                         <tr class="head">
                             <td class="head">Tugas</td>
@@ -25,7 +25,7 @@
                             <td class="button-container">
                                 @if ($tugasItem->user_id == auth()->user()->id)
                                     @if ($tugasItem->status == 'Udahdah')
-                                    <div class="btn-on-3">Tugas anda telah selesai</div>
+                                    <div class="btn-on-3">Tugas Anda Telah Selesai</div>
                                     @else
                                         @if ($tugasItem->status == 'Belum Di Kerjakan')
                                         <a href="{{ route('ubahstatus', ['idtugas' => $tugasItem->id, 'status' => 'Belum Di Kerjakan']) }}" class="btn-on-1"><i class="fa-solid fa-clock"></i>Belum Di Kerjakan</a> -

@@ -15,9 +15,9 @@
                 <div class="judul">
                 Tugas :
                 <h3 class="judul-text">{{ $tugas->judul }}</h3>
-                (Skor yang di dapat : {{ $tugas->skor }})
+                (skor yang di dapat : {{ $tugas->skor }})
                 @if ( $keterlambatan > 0 )
-                    Anda terlambat {{ $keterlambatan }} hari
+                    anda terlambat {{ $keterlambatan }} hari
                 @else
                 @endif
                 </div>
@@ -30,7 +30,7 @@
                 <form method="POST" action="{{ route('hasil-tugas.store', ['tugasId' => $tugas->id]) }}">
                     @csrf
                     <div class="input-group">
-                        <label for="">Link hasil tugas</label>
+                        <label for="">Link Hasil Tugas</label>
                         <input type="url" name="link_hasil" id="link_hasil" placeholder="Masukan link figma/github hasil tugas (jika ada)">
                     </div>
                     <div class="input-group">

@@ -25,7 +25,7 @@
                 <form method="POST" action="{{ route('tugas.editstore', ['tugasId' => $tugas->id]) }}">
                     @csrf
                     <div class="input-group">
-                        <label for="">Link hasil tugas</label>
+                        <label for="">Link Hasil Tugas</label>
                         <input type="url" name="link_hasil" id="link_hasil" placeholder="Masukan link figma/github hasil tugas (jika ada)" value="{{ old('link_hasil', $tugas->hasilTugas->link_hasil) }}">
                     </div>
                     <div class="input-group">

@@ -8,7 +8,7 @@
     <form method="POST" action="{{ route('user.ubahdata', ['tugasId' => $tugas->id]) }}">
         @csrf
         <div class="form-content-1">
-            <h2 class="tambah-judul">Ubah tugas</h2>
+            <h2 class="tambah-judul">Ubah Tugas</h2>
             <a href="@if (auth()->user()->role === 'admin') {{ route('admin.dashboard') }} @else {{ route('user.dashboard') }} @endif" class="back"><img src="{{ asset('img/xmark.png') }}" alt="" width="50px" height="50px"></a>
         </div>
         <div class="form">
@@ -42,7 +42,7 @@
                                         </span>
                                 @enderror
                             </div>
-                        <label for="admin_id">Nama pemberi tugas</label>
+                        <label for="admin_id">Nama Pemberi Tugas</label>
                             <div class="input-select-box">
                                 <select name="admin_id" @error('admin_id') id="admin_id" is-invalid @enderror" value="{{ old('admin_id', $tugas->admin_id) }}" required autocomplete="admin_id">
                                     @foreach($admins as $admin)

@@ -50,21 +50,21 @@
                         <div class="input-box">
                             <input type="number" name="wa" id="wa" value="{{ $user->wa }}">
                         </div>
-                        <label for="gender">jenis kelamin</label>
+                        <label for="gender">Jenis Kelamin</label>
                         <div class="input-box">
                             <input type="text" name="gender" id="gender" value="{{ $user->gender }}">
                         </div>
-                        <label for="sekolah">asal sekolah</label>
+                        <label for="sekolah">Asal Sekolah</label>
                         <div class="input-box">
                             <input type="text" name="sekolah" id="sekolah" value="{{ $user->sekolah }}">
                         </div>
                     </div>
                     <div class="form-content-2">
-                        <label for="instagram">instagram</label>
+                        <label for="instagram">Instagram</label>
                             <div class="input-box">
                                 <input type="text" name="instagram" id="instagram" value="{{ $user->instagram }}">
                             </div>
-                        <label for="status">status</label>
+                        <label for="status">Status</label>
                         <div class="input-box">
                             <select name="status" id="status">
                                 <option value="" selected hidden></option>
@@ -73,11 +73,11 @@
                                 <option value="Bucin" {{ $user->status == 'Bucin' ? 'selected' : '' }}>Bucin</option>
                                 <option value="Second Choice" {{ $user->status == 'Second Choice' ? 'selected' : '' }}>Second Choice</option>
                                 <option value="LDR" {{ $user->status == 'LDR' ? 'selected' : '' }}>LDR</option>
-                                <option value="Kepala 2" {{ $user->status == 'Kepala 2' ? 'selected' : '' }}>Kepala 2</option>
                                 <option value="Cincin 2" {{ $user->status == 'Cincin 2' ? 'selected' : '' }}>Cincin 2</option>
+                                <option value="Kepala 3" {{ $user->status == 'Kepala 3' ? 'selected' : '' }}>Kepala 3</option>
                             </select>
                         </div>
-                        <label for="kata_mutiara">kata-kata mutiara</label>
+                        <label for="kata_mutiara">kata-Kata Mutiara</label>
                             <div class="input-box">
                                 <textarea name="kata_mutiara" id="kata_mutiara" cols="30" rows="10">{{ $user->kata_mutiara }}</textarea>
                             </div>

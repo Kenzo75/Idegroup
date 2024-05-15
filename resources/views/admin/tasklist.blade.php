@@ -7,7 +7,7 @@
         <div class="task-list">
             <div class="task-content">
                 <div class="task-container">
-                    <h1 class="judul-task">List-list tugas anak magang</h1>
+                    <h1 class="judul-task">Daftar Semua Tugas Anak Magang</h1>
                     <table class="task-table" width="100%">
                         <tr class="head">
                             <td class="head">Tugas</td>
@@ -30,7 +30,7 @@
                                     <div class="btn-on-2"><i class="fa-solid fa-clock"></i>sabar lagi dikerjain</div>
                                 @endif
                                 @if ($tugasItem->status == 'Udahdah')
-                                <div class="btn-on-3"><i class="fa-solid fa-clock"></i>Sudah selesai</div>
+                                <div class="btn-on-3"><i class="fa-solid fa-clock"></i>Sudah Selesai</div>
                                 @endif
                             </td>
                             <td>{{ \Carbon\Carbon::parse($tugasItem->mulai)->format('d-m-Y') }}</td>

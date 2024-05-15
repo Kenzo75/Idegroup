@@ -7,21 +7,21 @@
         <div class="task-list">
             <div class="task-content">
                 <div class="task-container">
-                    <h1>Task list saya</h1>
+                    <h1>Daftar Tugas Saya</h1>
                     <table class="task-table" width="100%">
                         <tr class="head">
                             <td class="head">Tugas</td>
                             <td class="head">Status</td>
                             <td class="head">Tanggal<br> Mulai</td>
                             <td class="head">Tanggal<br> Berakhir</td>
-                            <td class="head"></td>
+                            <td class="head">Aksi</td>
                         </tr>
                         <tr>
                             @foreach($tugasItems as $tugasItem)
                             <td>{{ $tugasItem->judul }}</td>
                             <td class="button-container">
                                 @if ($tugasItem->status == 'Udahdah')
-                                    <div class="btn-on-3">Tugas anda telah selesai</div>
+                                    <div class="btn-on-3">Tugas Anda Telah Selesai</div>
                                     @else
                                         @if ($tugasItem->status == 'Belum Di Kerjakan')
                                         <a href="{{ route('ubahstatus', ['idtugas' => $tugasItem->id, 'status' => 'Belum Di Kerjakan']) }}" class="btn-on-1"><i class="fa-solid fa-clock"></i>Belum Di Kerjakan</a> -
@@ -75,18 +75,23 @@
                 <div class="container-jadwal">
                     <h2 class="hari">{{ $hariIni }}</h2>
                     <table width="80%" align="center">
-                        @if ($piketHariIni->count() > 0)
-                            @foreach($piketHariIni as $key => $piket)
-                            <tr>
-                                <td>{{ $key + 1 }}. {{ $piket->user->name }}</td>
-                            </tr>
-                            @endforeach
+                        @if ($piketHariIni && $piketHariIni->count() > 0)
+                            @if ($piketHariIni->count() > 0)
+                                @foreach($piketHariIni as $key => $piket)
+                                <tr>
+                                    <td>{{ $key + 1 }}. {{ $piket->user->name }}</td>
+                                </tr>
+                                @endforeach
+                            @else
+                                <tr>
+                                    <td>Tidak ada petugas piket untuk hari ini.</td>
+                                </tr>
+                            @endif
                         @else
-                            <tr>
-                                <td>Tidak ada petugas piket untuk hari ini.</td>
-                            </tr>
+                        <tr>
+                            <td align="center">Hari Ini Libur</td>
+                        </tr>
                         @endif
-
                     </table>
                     <a href="{{ route('jadwal') }}" class="more"><p>selengkapnya</p></a>
                 </div>

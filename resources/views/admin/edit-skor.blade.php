@@ -26,7 +26,7 @@
                     @csrf
                     <div class="input-group">
                         <label for="skor">Ganti Skor</label>
-                        <input type="number" name="skor" id="skor" placeholder="Masukan link figma/github hasil tugas (jika ada)" value="{{ old('skor', $user->skor) }}">
+                        <input type="number" name="skor" id="skor" placeholder="Ubah skor anak magang" value="{{ old('skor', $user->skor) }}">
                     </div>
                     <div class="input-group">
                         <input type="submit" value="Kirim" class="submit">

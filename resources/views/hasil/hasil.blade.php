@@ -29,7 +29,7 @@
                             <td>{{ $tugas->hasilTugas->created_at }}</td>
                         </tr>
                         <tr>
-                            <td>Deskripsi pengerjaan :</td>
+                            <td>Deskripsi Pengerjaan :</td>
                             <td>{{ $tugas->hasilTugas->deskripsi }}</td>
                         </tr>
                         <tr>
@@ -38,7 +38,7 @@
                             @if($tugas->hasilTugas->link_hasil)
                                 <a href="{{ $tugas->hasilTugas->link_hasil }}">{{ $tugas->hasilTugas->link_hasil }}</a>
                             @else
-                                Tidak ada link hasil tugas untuk tugas ini.
+                                tidak ada link hasil tugas untuk tugas ini.
                             @endif
                             </td>
                         </tr>

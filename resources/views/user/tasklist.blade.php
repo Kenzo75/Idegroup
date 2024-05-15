@@ -7,7 +7,7 @@
     <div class="task">
         <div class="task-content">
             <div class="task-container">
-                <h1 class="judul-task">List-list tugas anak magang</h1>
+                <h1 class="judul-task">Daftar Semua Tugas Anak Magang</h1>
                     <table class="task-table" width="100%">
                         <tr class="head">
                             <td class="head">Tugas</td>
@@ -23,13 +23,13 @@
                             <td><img src="{{ asset('storage/' . $tugasItem->user->foto) }}" id="profil-picture" width="25px" height="25px" class="foto" align="center">{{ $tugasItem->user->name }}</td>
                             <td colspan="2">
                                 @if ($tugasItem->status == 'Belum Di Kerjakan')
-                                <div class="btn-on-1"><i class="fa-solid fa-clock"></i>Belum dikerjain</div>
+                                <div class="btn-on-1"><i class="fa-solid fa-clock"></i>Belum Dikerjain</div>
                                 @endif
                                 @if ($tugasItem->status == 'Lagik Di Kerjakan')
-                                    <div class="btn-on-2"><i class="fa-solid fa-clock"></i>sabar lagi dikerjain</div>
+                                    <div class="btn-on-2"><i class="fa-solid fa-clock"></i>Sabar Lagi Dikerjain</div>
                                 @endif
                                 @if ($tugasItem->status == 'Udahdah')
-                                <div class="btn-on-3"><i class="fa-solid fa-clock"></i>Sudah selesai</div>
+                                <div class="btn-on-3"><i class="fa-solid fa-clock"></i>Sudah Selesai</div>
                                 @endif
 
                             </td>

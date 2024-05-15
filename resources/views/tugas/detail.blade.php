@@ -33,11 +33,11 @@
                             <td>{{ $tugas->status }}</td></td>
                         </tr>
                         <tr>
-                            <td>Pemberi tugas :</td>
+                            <td>Pemberi Tugas :</td>
                             <td>{{ $tugas->admin->name }}</td>
                         </tr>
                         <tr>
-                            <td>Waktu pengerjaan :</td>
+                            <td>Waktu Pengerjaan :</td>
                             <td>{{ $tugas->mulai }} <i class="fa-solid fa-grip-lines"></i><i class="fa-solid fa-angles-right"></i> {{ $tugas->selesai }}</td>
                         </tr>
                         <tr>

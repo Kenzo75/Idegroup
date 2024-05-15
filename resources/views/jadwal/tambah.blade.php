@@ -13,7 +13,7 @@
         <div class="kirim-content">
             <div class="head">
                 <div class="judul">
-                    <h2>Tambah petugas piket</h2>
+                    <h2>Tambah Petugas Piket</h2>
                 </div>
                 <div class="button">
                     <a class="back" href="{{ route('jadwal') }}" class="back"><img src="{{ asset('img/xmark.png') }}" width="40px" height="40px"><br>BACK</a>

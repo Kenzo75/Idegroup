@@ -16,9 +16,9 @@
                     <div class="nama-text">
                         <b><h3>{{ $user->name }}</h3>
                         <h5>@if (auth()->user()->role === 'admin')
-                            Yang mulia mentor
+                            Yang Mulia Mentor
                             @else
-                            Anak magang
+                            Anak Magang
                             @endif
                         </h5>
                         @if (auth()->user()->role === 'admin')
@@ -36,11 +36,11 @@
                 </div>
                 <div class="body">
                     <p class="isi-body">{{ $user->email }}</p>
-                    <p class="isi-body">Asal sekolah : {{ $user->sekolah }}</p>
-                    <p class="isi-body">Jenis kelamin : {{ $user->gender }}</p>
-                    <P class="isi-body">status : {{ $user->status }}</P>
+                    <p class="isi-body">Asal Sekolah : {{ $user->sekolah }}</p>
+                    <p class="isi-body">Jenis Kelamin : {{ $user->gender }}</p>
+                    <P class="isi-body">Status : {{ $user->status }}</P>
                     <div class="kata-mutiara">
-                        <p class="mutiara">Kata-kata mutiara : </p>
+                        <p class="mutiara">Kata-Kata Mutiara : </p>
                         <p>{{ $user->kata_mutiara }}</p>
                     </div>
                     <a href="{{ route('profil.edit') }}" class="edit-profil">Edit profil</a>

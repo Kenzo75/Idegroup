@@ -8,7 +8,7 @@
     <form method="POST" action="{{ route('admin.ubahdata',['tugasId' => $tugas->id]) }}">
         @csrf
         <div class="form-content-1">
-            <h2 class="tambah-judul">Edit tugas</h2>
+            <h2 class="tambah-judul">Edit Tugas</h2>
             <a href="@if (auth()->user()->role === 'admin') {{ route('admin.dashboard') }} @else {{ route('user.dashboard') }} @endif" class="back"><img src="{{ asset('img/xmark.png') }}" alt="" width="50px" height="50px"></a>
         </div>
         <div class="form">
@@ -42,7 +42,7 @@
                                         </span>
                                 @enderror
                             </div>
-                        <label for="admin_id">Nama pemberi tugas</label>
+                        <label for="admin_id">Nama Pemberi Tugas</label>
                             <div class="input-select-box">
                                 <select name="admin_id" @error('admin_id') is-invalid @enderror" id="admin_id" value="{{ old('admin_id', $tugas->admin_id ) }}" required autocomplete="admin_id">
                                     @foreach($admins as $admin)
@@ -64,7 +64,7 @@
                                         </span>
                                 @enderror
                             </div>
-                        <label for="pengurangan_skor">Pengurangan  skor</label>
+                        <label for="pengurangan_skor">Pengurangan Skor</label>
                             <div class="input-box">
                                 <input type="number" name="pengurangan_skor" @error('pengurangan_skor') max="255" is-invalid @enderror" id="pengurangan_skor" value="{{ old('pengurangan_skor', $tugas->pengurangan_skor ) }}" required autocomplete="pengurangan_skor">
                                 @error('pengurangan_skor')
@@ -73,7 +73,7 @@
                                         </span>
                                 @enderror
                             </div>
-                        <label for="selesai">Waktu berakhir tugas</label>
+                        <label for="selesai">Waktu Berakhir Tugas</label>
                             <div class="input-box">
                                 <input type="date" name="selesai" @error('selesai') is-invalid @enderror" id="selesai" value="{{ old('selesai', $tugas->selesai ) }}" required autocomplete="selesai">
                                 @error('selesai')

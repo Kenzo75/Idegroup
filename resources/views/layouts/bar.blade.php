@@ -30,11 +30,11 @@
                         <hr width="100%" class="hitam">
                         <div class="route">
                             <a href="@if (auth()->user()->role === 'admin') {{ route('admin.dashboard') }} @else {{ route('user.dashboard') }} @endif" class="@if(Request::is('user-dashboard', 'admin-dashboard') || Request::is('admin-dashboard') || Request::is('user-dashboard')) btn-side-bar-on @else btn-side-bar @endif"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-layout-wtf" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M5 1v8H1V1h4zM1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm13 2v5H9V2h5zM9 1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9zM5 13v2H3v-2h2zm-2-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3zm12-1v2H9v-2h6zm-6-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H9z" id="mainIconPathAttribute"></path> </svg></div>Dashboard</a>
-                            <a href="@if (auth()->user()->role === 'admin') {{ route('admin.tasklist') }} @else {{ route('user.tasklist') }} @endif" class="@if(Request::is('user-tasklist', 'admin-tasklist') || Request::is('admin-tasklist') || Request::is('user-tasklist')) btn-side-bar-on @else btn-side-bar @endif"><div class="icon"><i class="fa-solid fa-clipboard-list"></i></div>Task list</a>
+                            <a href="@if (auth()->user()->role === 'admin') {{ route('admin.tasklist') }} @else {{ route('user.tasklist') }} @endif" class="@if(Request::is('user-tasklist', 'admin-tasklist') || Request::is('admin-tasklist') || Request::is('user-tasklist')) btn-side-bar-on @else btn-side-bar @endif"><div class="icon"><i class="fa-solid fa-clipboard-list"></i></div>Daftar Tugas</a>
                             <a href="@if (auth()->user()->role === 'admin') {{ route('admin.leaderboard') }} @else {{ route('user.leaderboard') }} @endif" class="@if(Request::is('user-leaderboard', 'admin-leaderboard') || Request::is('admin-leaderboard') || Request::is('user-leaderboard')) btn-side-bar-on @else btn-side-bar @endif"><div class="icon"><i class="fa-solid fa-chart-line"></i></div>Leaderboard</a>
-                            <a href="{{ route('jadwal') }}" class="@if(Request::is('jadwal')) btn-side-bar-on @else btn-side-bar @endif"><div class="icon"><i class="fa-regular fa-calendar-days"></i></div>Jadwal piket</a>
+                            <a href="{{ route('jadwal') }}" class="@if(Request::is('jadwal')) btn-side-bar-on @else btn-side-bar @endif"><div class="icon"><i class="fa-regular fa-calendar-days"></i></div>Jadwal Piket</a>
                             @if (auth()->user()->role === 'admin')
-                            <a href="{{ route('admin.history') }}" class="@if(Request::is('admin-history')) btn-side-bar-on @else btn-side-bar @endif"><div class="icon"><i class="fa-regular fa-folder" style="color: #000000;"></i></div>History tugas</a>
+                            <a href="{{ route('admin.history') }}" class="@if(Request::is('admin-history')) btn-side-bar-on @else btn-side-bar @endif"><div class="icon"><i class="fa-regular fa-folder" style="color: #000000;"></i></div>History Tugas</a>
                             @else
                             @endif
                         </div>
@@ -48,9 +48,9 @@
                             <div class="role">
                             <p class="namauser">
                                 @if (auth()->user()->role === 'admin')
-                                    (Yang mulia mentor)
+                                    (Yang Mulia Mentor)
                                 @else
-                                    (Anak magang)
+                                    (Anak Magang)
                                 @endif
                             </p>
                             <p>{{ Auth::user()->email }}</p>
@@ -58,25 +58,6 @@
                         </a>
                         </div>
                     </div>
-                    {{-- <img src="{{ asset('img/jempol.group') }}" alt="" width="80%" class="logo">
-                    <hr width="100%" class="hitam">
-                        <div class="sidebar-content">
-                            <a href="@if (auth()->user()->role === 'admin') {{ route('admin.dashboard') }} @else {{ route('user.dashboard') }} @endif" class="@if(Request::is('user-dashboard', 'admin-dashboard') || Request::is('admin-dashboard') || Request::is('user-dashboard')) btn-side-bar-on @else btn-side-bar @endif"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-layout-wtf" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M5 1v8H1V1h4zM1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm13 2v5H9V2h5zM9 1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9zM5 13v2H3v-2h2zm-2-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3zm12-1v2H9v-2h6zm-6-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H9z" id="mainIconPathAttribute"></path> </svg></div>Dashboard</a>
-                            <a href="@if (auth()->user()->role === 'admin') {{ route('admin.tasklist') }} @else {{ route('user.tasklist') }} @endif" class="@if(Request::is('user-tasklist', 'admin-tasklist') || Request::is('admin-tasklist') || Request::is('user-tasklist')) btn-side-bar-on @else btn-side-bar @endif"><div class="icon"><i class="fa-solid fa-clipboard-list"></i></div>Task list</a>
-                            <a href="@if (auth()->user()->role === 'admin') {{ route('admin.tasklist') }} @else {{ route('user.tasklist') }} @endif" class="@if(Request::is('user-leaderboard', 'admin-leaderboard') || Request::is('admin-leaderboard') || Request::is('user-leaderboard')) btn-side-bar-on @else btn-side-bar @endif"><div class="icon"><i class="fa-solid fa-chart-line"></i></div>Leaderboard</a>
-                            <a href="@if (auth()->user()->role === 'admin') {{ route('admin.tasklist') }} @else {{ route('user.tasklist') }} @endif" class="@if(Request::is('user-jadwal', 'admin-jadwal') || Request::is('admin-jadwal') || Request::is('user-jadwal')) btn-side-bar-on @else btn-side-bar @endif"><div class="icon"><i class="fa-regular fa-calendar-days"></i></div>Jadwal piket</a>
-                            <a href="@if (auth()->user()->role === 'admin') {{ route('admin.tasklist') }} @else {{ route('user.tasklist') }} @endif" class="@if(Request::is('user-history', 'admin-history') || Request::is('admin-history') || Request::is('user-history')) btn-side-bar-on @else btn-side-bar @endif"><div class="icon"><i class="fa-regular fa-folder" style="color: #000000;"></i></div>Jadwal piket</a>
-                        </div>
-                    <a href="profildashboard.html"><img src="{{ asset('img/venti1.jpg') }}" alt="" width="100px" height="100px" class="profil"></a>
-                    <h3>{{ Auth::user()->name }}</h3>
-                    <p class="username">
-                        @if (auth()->user()->role === 'admin')
-                            (Yang mulia mentor)
-                        @else
-                            (Anak magang)
-                        @endif
-                    </p>
-                    <p class="email">{{ Auth::user()->email }}</p> --}}
                 </div>
             </div>
 
